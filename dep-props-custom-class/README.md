@@ -1,8 +1,8 @@
 ## dep-props-custom-class
 
-The web part shows example of creating Property Pane Field that consists of two dependent dropdowns:
-one for lists
-one for views of a selected view
+The web part shows example of creating Property Pane Field that consists of two dependent dropdowns:<br />
+one for lists<br />
+one for views of a selected view<br />
 
 ### Building the code
 
