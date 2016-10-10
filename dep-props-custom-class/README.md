@@ -7,7 +7,8 @@ one for views of a selected view<br />
 ### Building the code
 
 ```bash
-git clone the repo
+git clone https://github.com/AJIXuMuK/SPFx.git
+cd /SPFx/dep-props-custom-class/
 npm i
 npm i -g gulp
 gulp
