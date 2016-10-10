@@ -13,7 +13,6 @@
     "description": { "default": "DepProps description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "DepProps",
       "depProps": {
         "listId": "-1",
         "viewId": "-1"

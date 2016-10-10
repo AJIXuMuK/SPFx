@@ -24,14 +24,8 @@ export default class DepPropsWebPart extends BaseClientSideWebPart<IDepPropsWebP
         <div class="${styles.container}">
           <div class="ms-Grid-row ms-bgColor-themeDark ms-fontColor-white ${styles.row}">
             <div class="ms-Grid-col ms-u-lg10 ms-u-xl8 ms-u-xlPush2 ms-u-lgPush1">
-              <span class="ms-font-xl ms-fontColor-white">Welcome to SharePoint!</span>
-              <p class="ms-font-l ms-fontColor-white">Customize SharePoint experiences using Web Parts.</p>
-              <p class="ms-font-l ms-fontColor-white">${this.properties.description}</p>
-              <p class="ms-font-l ms-fontColor-white">${this.properties.depProps.listId}</p>
-              <p class="ms-font-l ms-fontColor-white">${this.properties.depProps.viewId}</p>
-              <a href="https://github.com/SharePoint/sp-dev-docs/wiki" class="ms-Button ${styles.button}">
-                <span class="ms-Button-label">Learn more</span>
-              </a>
+              <p class="ms-font-l ms-fontColor-white">Selected List Id: ${this.properties.depProps.listId}</p>
+              <p class="ms-font-l ms-fontColor-white">Selected View Id: ${this.properties.depProps.viewId}</p>
             </div>
           </div>
         </div>
