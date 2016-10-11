@@ -4,7 +4,7 @@ import {
 import { EnvironmentType } from '@microsoft/sp-client-base';
 import { IDataHelper } from './DataHelperBase';
 import { DataHelperMock } from './DataHelperMock';
-import { DataHelperSP } from './DatahelperSP';
+import { DataHelperSP } from './DataHelperSP';
 
 /**
  * Factory object to create data helper based on current EnvironmentType

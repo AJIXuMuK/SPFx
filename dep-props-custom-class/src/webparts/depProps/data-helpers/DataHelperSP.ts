@@ -40,10 +40,10 @@ export class DataHelperSP implements IDataHelper {
    * API to get lists from the source
    */
   public getLists(): Promise<ISPList[]> {
-    return this.context.httpClient.get(this.context.pageContext.web.absoluteUrl + `/_api/web/lists?$filter=Hidden eq false`)
-      .then((response: Response) => {
+    return this.context.httpClient.get(this.context.pageContext.web.absoluteUrl + `/_api/web/lists?$filter=Hidden eq false`) // sending the request to SharePoint REST API
+      .then((response: Response) => { // httpClient.get method returns a response object where json method creates a Promise of getting result
         return response.json();
-      }).then((response: ISPLists) => {
+      }).then((response: ISPLists) => { // response is an ISPLists object
         return response.value;
       });
   }
@@ -52,10 +52,14 @@ export class DataHelperSP implements IDataHelper {
    * API to get views from the source
    */
   public getViews(listId: string): Promise<ISPView[]> {
-    if (listId == '-1' || listId == '0')
+    if (listId && listId == '-1' || listId == '0')
       return new Promise<ISPView[]>((resolve) => {
       resolve(new Array<ISPView>());
     });
+
+    //
+    // trying to get views from cache
+    //
     const lists: ISPListWithViews[] = this._lists && this._lists.length && this._lists.filter((value, index, array) => { return value.Id === listId; });
 
     if (lists && lists.length) {
@@ -64,10 +68,10 @@ export class DataHelperSP implements IDataHelper {
       });
     }
     else {
-      return this.context.httpClient.get(this.context.pageContext.web.absoluteUrl + '/_api/web/lists(\'' + listId + '\')/views')
-        .then((response: Response) => {
+      return this.context.httpClient.get(this.context.pageContext.web.absoluteUrl + '/_api/web/lists(\'' + listId + '\')/views') // requesting views from SharePoint REST API
+        .then((response: Response) => { // httpClient.get method returns a response object where json method creates a Promise of getting result
           return response.json();
-        }).then((response: ISPViews) => {
+        }).then((response: ISPViews) => { // response is an ISPViews object
           var views = response.value;
           if (!this._lists || !this._lists.length)
             this._lists = new Array<ISPListWithViews>();
