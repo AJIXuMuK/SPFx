@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "iframe-dialog-example",
+    "libraryId": "1fe5a2eb-c1c2-44c8-b883-cf774f7199b2",
+    "environment": "spo"
+  }
+}

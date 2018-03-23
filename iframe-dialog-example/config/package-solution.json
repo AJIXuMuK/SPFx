@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "iframe-dialog-example-client-side-solution",
+    "id": "1fe5a2eb-c1c2-44c8-b883-cf774f7199b2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/iframe-dialog-example.sppkg"
+  }
+}
