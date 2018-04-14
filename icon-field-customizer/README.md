@@ -4,7 +4,8 @@ To test the sample:
 2. Add a Choice column named Forecast
 3. Provide next values for the Forecast column: Sunny, Rainy, PartlyCloudy
 4. Clone the repo
-5. ```bash
+5. 
+```bash
 npm i
 gulp serve --nobrowser
 ```
