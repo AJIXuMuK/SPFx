@@ -3,8 +3,7 @@ import styles from './IframeDialog.module.scss';
 import { IIframeDialogProps } from './IIframeDialogProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 import { PrimaryButton, DialogType } from 'office-ui-fabric-react';
-import  IFrameDialog from "@pnp/spfx-controls-react/lib/controls/IFrameDialog/IFrameDialog";
-import { ListView, IViewField, SelectionMode, GroupOrder, IGrouping } from "@pnp/spfx-controls-react/lib/ListView";
+import  { IFrameDialog } from "@pnp/spfx-controls-react/lib/controls/IFrameDialog/IFrameDialog";
 
 export interface IIframeDialogState {
   isDlgOpen?: boolean;
