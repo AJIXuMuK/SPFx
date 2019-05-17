@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="IFrameDialog"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="29cf8bbc-9540-47d8-9d82-48a0cce9d49d"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>
