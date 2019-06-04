@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "field-lookup-renderer-webpart-client-side-solution",
+    "id": "4ce43332-5aa9-4c6d-a9bc-64f084be520f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/field-lookup-renderer-webpart.sppkg"
+  }
+}
