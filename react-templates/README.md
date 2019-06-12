@@ -10,7 +10,7 @@ The problem with these libraries is that in most cases they provide you an abili
 
 The idea of this project was to showcase how we can dynamically render React components as well as dynamically load these components from modules that are not included into our project.
 
-And, because, we're working with SPFx, SPFx Library Component is a great way for creating templates libraries.
+And, because we're working with SPFx, SPFx Library Component is a great way for creating templates libraries.
 
 ### What the sample does
 The sample contains a web part that renders a list of tasks and task details of the selected task.
