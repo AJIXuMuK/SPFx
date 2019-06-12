@@ -1,0 +1,20 @@
+.taskDetails {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .title {
+      font-weight: 700;
+      width: 120px;
+      min-width: 120px;
+    }
+
+    .value {
+      white-space: normal;
+    }
+  }
+}

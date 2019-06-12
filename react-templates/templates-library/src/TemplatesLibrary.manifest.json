@@ -1,0 +1,9 @@
+{
+  "id": "cd6e18e2-a8f3-4f97-9f07-7dfcecdd47ed",
+  "alias": "TemplatesLibrary",
+  "componentType": "Library",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2
+}

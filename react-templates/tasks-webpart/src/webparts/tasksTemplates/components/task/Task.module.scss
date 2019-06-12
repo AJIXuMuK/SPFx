@@ -1,0 +1,9 @@
+$hoverBackgroundColor: "[theme: neutralLight, default: #eaeaea]";
+
+.task {
+  padding: 0 15px;
+  &:hover {
+    background-color: $hoverBackgroundColor;
+    cursor: pointer;
+  }
+}

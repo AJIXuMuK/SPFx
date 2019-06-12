@@ -1,0 +1,34 @@
+$border-color: "[theme: neutralLighter, default: #f4f4f4]";
+$hoverBackgroundColor: "[theme: neutralLight, default: #eaeaea]";
+
+.task {
+  padding: 10px 15px;
+  border-bottom: 1px solid;
+  border-bottom-color: $border-color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &:hover {
+    background-color: $hoverBackgroundColor;
+    cursor: pointer;
+  }
+
+  .title {
+    flex-grow: 1;
+  }
+
+  .assignedTo {
+    width: 30px;
+    text-align: center;
+    flex-grow: 0;
+  }
+
+  .iconContainer {
+    width: 16px;
+    height: 16px;
+    flex-grow: 0;
+    .warning {
+      color: #ff0000;
+    }
+  }
+}

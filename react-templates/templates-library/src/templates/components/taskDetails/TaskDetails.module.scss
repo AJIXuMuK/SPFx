@@ -1,0 +1,26 @@
+.taskDetails {
+  display: flex;
+  flex-direction: column;
+  .header {
+    padding-bottom: 20px;
+    .titleBar {
+      padding: 10px 20px 12px;
+      height: 25px;
+      font-size: 21px;
+      line-height: 1.2;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .row {
+    margin-bottom: 10px;
+
+    .title {
+      font-size: 12px;
+    }
+
+    .value {
+      font-size: 14px;
+    }
+  }
+}
