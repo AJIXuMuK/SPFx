@@ -5,7 +5,7 @@ This project showcases how a developer can use dynamic React components (templat
 Templating is a pretty powerful approach to provide extensibility to a project/component/library. It can be used to deliver different behaviors and/or look and feel to different customers, or provide extendable open-source libraries.
 
 There are a lot of template libraries out there that can be used in your project. 
-One of the most popular is [Handlebar.js](https://handlebarsjs.com/).
+One of the most popular is [Handlebars.js](https://handlebarsjs.com/).
 The problem with these libraries is that in most cases they provide you an ability to define "static" content (basically, HTML and CSS). And if you want to include some actionable content (e.g. handle events from outside the template, etc.) - it might be either tricky or impossible.
 
 The idea of this project was to showcase how we can dynamically render React components as well as dynamically load these components from modules that are not included into our project.

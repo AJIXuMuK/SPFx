@@ -40,7 +40,7 @@ export interface ITaskListProps {
    */
   tasks: ITask[];
   /**
-   * React component (template) to use to dusplay tasks
+   * React component (template) to use to display tasks
    */
   taskTemplate: React.ComponentClass<ITaskProps>;
   /**
