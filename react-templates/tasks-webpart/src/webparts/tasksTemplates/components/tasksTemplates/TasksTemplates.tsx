@@ -31,7 +31,7 @@ export default class TasksTemplates extends React.Component<ITasksTemplatesProps
     } = this.state;
 
     //
-    // Any uppercased variable can be used as a React component in .tsx (.jsx) files.
+    // Any capitalized variable can be used as a React component in .tsx (.jsx) files.
     // We're getting the templates (React components) from template factory to use them in the markup
     //
     const TaskList = templateFactory.getTemplateComponent('task-list') as React.ComponentClass<ITaskListProps>;

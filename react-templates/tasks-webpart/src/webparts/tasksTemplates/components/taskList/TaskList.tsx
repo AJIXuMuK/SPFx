@@ -19,7 +19,7 @@ export class TaskList extends React.Component<ITaskListProps, ITaskListState> {
       strings
     } = this.props;
 
-    // any uppercased variable can be used and React element
+    // any capitalized variable can be used and React element
     const TaskTemplate = taskTemplate;
 
     return (
