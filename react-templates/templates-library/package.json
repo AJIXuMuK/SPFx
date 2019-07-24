@@ -11,20 +11,20 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "@microsoft/sp-core-library": "1.8.2-plusbeta",
+    "@microsoft/sp-core-library": "1.9.0",
     "@types/es6-promise": "0.0.33",
-    "@types/react": "16.4.2",
-    "@types/react-dom": "16.0.5",
+    "@types/react": "16.8.8",
+    "@types/react-dom": "16.8.3",
     "@types/webpack-env": "1.13.1",
     "office-ui-fabric-react": "^5.132.0",
-    "react": "16.7.0",
-    "react-dom": "16.7.0"
+    "react": "16.8.5",
+    "react-dom": "16.8.5"
   },
   "devDependencies": {
-    "@microsoft/sp-build-web": "1.8.2-plusbeta",
-    "@microsoft/sp-tslint-rules": "1.8.2-plusbeta",
-    "@microsoft/sp-module-interfaces": "1.8.2-plusbeta",
-    "@microsoft/rush-stack-compiler-2.9": "0.7.7",
+    "@microsoft/sp-build-web": "1.9.0",
+    "@microsoft/sp-tslint-rules": "1.9.0",
+    "@microsoft/sp-module-interfaces": "1.9.0",
+    "@microsoft/rush-stack-compiler-2.9": "0.7.16",
     "gulp": "~3.9.1",
     "@types/chai": "3.4.34",
     "@types/mocha": "2.2.38",
