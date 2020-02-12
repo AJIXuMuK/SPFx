@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ouifr-grouped-details-list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ouifrGroupedDetailsList/OuifrGroupedDetailsListWebPart.js",
+          "manifest": "./src/webparts/ouifrGroupedDetailsList/OuifrGroupedDetailsListWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "OuifrGroupedDetailsListWebPartStrings": "lib/webparts/ouifrGroupedDetailsList/loc/{locale}.js"
+  }
+}

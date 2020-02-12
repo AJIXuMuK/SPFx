@@ -1,0 +1,14 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ouifr-grouped-details-list-client-side-solution",
+    "id": "21e8e93f-83d4-49ab-ac3e-bbf618c477c5",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/ouifr-grouped-details-list.sppkg"
+  }
+}
