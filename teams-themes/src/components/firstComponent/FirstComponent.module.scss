@@ -1,0 +1,49 @@
+@import "../../common/colors.module";
+
+.firstComponent {
+	background: "[theme:white, default:#fff]";
+	color: "[theme:primaryText, default:#333]";
+	height: 200px;
+
+	.button {
+		background: "[theme:themePrimary, default:#0078d4]";
+		color: "[theme:white, default:#fff]";
+		height: 40px;
+	}
+}
+
+[data-theme='default'] {
+	.firstComponent {
+		background: $default-firstComponent-background;
+		color: $default-firstComponent-color;
+
+		.button {
+			background: $default-firstComponentButton-background;
+			color: $default-firstComponentButton-color;
+		}
+	}
+}
+
+[data-theme='dark'] {
+	.firstComponent {
+		background: $dark-firstComponent-background;
+		color: $dark-firstComponent-color;
+
+		.button {
+			background: $dark-firstComponentButton-background;
+			color: $dark-firstComponentButton-color;
+		}
+	}
+}
+
+[data-theme='contrast'] {
+	.firstComponent {
+		background: $contrast-firstComponent-background;
+		color: $contrast-firstComponent-color;
+
+		.button {
+			background: $contrast-firstComponentButton-background;
+			color: $contrast-firstComponentButton-color;
+		}
+	}
+}

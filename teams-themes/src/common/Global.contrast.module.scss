@@ -1,0 +1,24 @@
+@import './colors.module';
+[data-theme='contrast'] {
+	:global {
+    .ms-Fabric {
+			color: $contrast-primaryText;
+		}
+		.ms-Button-icon {
+			color: $contrast-primaryText;
+    }
+
+		.ms-Overlay {
+			background-color: $contrast-overlay;
+		}
+
+		.ms-Panel-main {
+			background-color: $contrast-surfaceBackground;
+			border-left-color: $contrast-panelBorder;
+			border-right-color: $contrast-panelBorder;
+			.ms-Panel-headerText {
+				color: $contrast-primaryText;
+			}
+		}
+	}
+}
