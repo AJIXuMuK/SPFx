@@ -19,6 +19,41 @@
 			.ms-Panel-headerText {
 				color: $contrast-primaryText;
 			}
+    }
+
+    .spPropertyPaneContainer {
+			background-color: $contrast-white;
+			[class^="propertyPane_"] {
+				background-color: $contrast-white;
+				border-left-color: $contrast-panelBorder;
+        [class^="propertyPanePageTitle_"],
+        [class^="propertyPanePageDescription_"],
+        [class^="propertyPaneGroupHeaderNoAccordion_"] {
+					color: $contrast-primaryText;
+				}
+				.ms-Button--icon {
+					&:hover {
+						background-color: transparent;
+					}
+				}
+			}
+    }
+
+    .ms-Label {
+			color: $contrast-primaryText;
+		}
+		.ms-TextField {
+			.ms-TextField-fieldGroup {
+				background-color: $contrast-inputBackground;
+				color: $contrast-primaryText;
+				border-color: $contrast-inputBorder;
+				.ms-TextField-field {
+					color: $contrast-primaryText;
+				}
+				&:hover {
+					border-color: $contrast-inputBorderHovered;
+				}
+			}
 		}
 	}
 }

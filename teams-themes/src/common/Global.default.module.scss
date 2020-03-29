@@ -27,7 +27,9 @@
 			[class^="propertyPane_"] {
 				background-color: $default-white;
 				border-left-color: $default-panelBorder;
-				[class^="propertyPanePageTitle_"] {
+        [class^="propertyPanePageTitle_"],
+        [class^="propertyPanePageDescription_"],
+        [class^="propertyPaneGroupHeaderNoAccordion_"] {
 					color: $default-primaryText;
 				}
 				.ms-Button--icon {
