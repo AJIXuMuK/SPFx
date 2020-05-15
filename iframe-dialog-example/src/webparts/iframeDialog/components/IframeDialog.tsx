@@ -2,14 +2,16 @@ import * as React from 'react';
 import styles from './IframeDialog.module.scss';
 import { IIframeDialogProps } from './IIframeDialogProps';
 import { escape } from '@microsoft/sp-lodash-subset';
-import { PrimaryButton, DialogType } from 'office-ui-fabric-react';
-import  { IFrameDialog } from "@pnp/spfx-controls-react/lib/controls/IFrameDialog/IFrameDialog";
+import { PrimaryButton, DialogType, TextField, ITextField } from 'office-ui-fabric-react';
+import { IFrameDialog } from "@pnp/spfx-controls-react/lib/controls/IFrameDialog/IFrameDialog";
 
 export interface IIframeDialogState {
   isDlgOpen?: boolean;
 }
 
 export default class IframeDialog extends React.Component<IIframeDialogProps, IIframeDialogState> {
+  private _urlTextFieldRef: ITextField | undefined;
+
   public constructor(props: IIframeDialogProps) {
     super(props);
 
@@ -26,11 +28,12 @@ export default class IframeDialog extends React.Component<IIframeDialogProps, II
               <span className={styles.title}>Welcome to SharePoint!</span>
               <p className={styles.subTitle}>Customize SharePoint experiences using Web Parts.</p>
               <p className={styles.description}>{escape(this.props.description)}</p>
+              <TextField label='Enter URL to open' componentRef={ref => { this._urlTextFieldRef = ref; }} />
               <PrimaryButton text={'Open Dialog'} onClick={this._onClick.bind(this)} />
-              <IFrameDialog
-                url={'/temp/workbench.html'}
+              {this.state.isDlgOpen && <IFrameDialog
+                url={this._urlTextFieldRef && this._urlTextFieldRef.value ? this._urlTextFieldRef.value : '/temp/workbench.html'}
                 iframeOnLoad={this._onDlgLoaded.bind(this)}
-                hidden={!this.state.isDlgOpen}
+                hidden={false}
                 onDismiss={this._onDlgDismiss.bind(this)}
                 modalProps={{
                   isBlocking: true
@@ -40,7 +43,7 @@ export default class IframeDialog extends React.Component<IIframeDialogProps, II
                   showCloseButton: true
                 }}
                 width={'570px'}
-                height={'315px'} />
+                height={'315px'} />}
             </div>
           </div>
         </div>
